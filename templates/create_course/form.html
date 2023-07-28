@@ -1,0 +1,41 @@
+{% extends 'layout/base_generic.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="video">Video</label>
+        <input type="file" class="form-control-file" id="video" name="video">
+      </div>
+      <div class="form-group">
+        <label for="profession">Profession</label>
+        <select class="form-control" id="profession" name="profession">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="complication">Complication</label>
+        <select class="form-control" id="complication" name="complication">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" data-method="post">Submit</button>
+    </form>
+</body>
+</html>
